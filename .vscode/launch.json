@@ -12,7 +12,7 @@
             "name": "Launch Application",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "program": "${workspaceFolder}/builddir/src/com.fyralabs.ValaTemplate",
+            "program": "${workspaceFolder}/builddir/src/com.fyralabs.SkiffDesktop",
             "preLaunchTask": "Meson: Build all targets"
         }
     ]

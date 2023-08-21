@@ -6,5 +6,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "mesonbuild.linter.muon.enabled": true,
-    "mesonbuild.formatting.enabled": true
+    "mesonbuild.formatting.enabled": true,
+    "C_Cpp.default.compileCommands": "builddir/compile_commands.json"
 }

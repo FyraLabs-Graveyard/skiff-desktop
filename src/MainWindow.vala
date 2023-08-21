@@ -1,5 +1,5 @@
-[GtkTemplate (ui = "/com/fyralabs/ValaTemplate/mainwindow.ui")]
-public class ValaTemplate.MainWindow : He.ApplicationWindow {
+[GtkTemplate (ui = "/com/fyralabs/SkiffDesktop/mainwindow.ui")]
+public class SkiffDesktop.MainWindow : He.ApplicationWindow {
     private const GLib.ActionEntry APP_ENTRIES[] = {
         { "about", action_about },
     };
@@ -20,7 +20,7 @@ public class ValaTemplate.MainWindow : He.ApplicationWindow {
         Object (
             application: application,
             icon_name: Config.APP_ID,
-            title: _("Vala Template")
+            title: _("Skiff")
         );
     }
 
@@ -58,7 +58,7 @@ public class ValaTemplate.MainWindow : He.ApplicationWindow {
     private void action_about () {
         new He.AboutWindow (
             this,
-            _("Vala Template") + Config.NAME_SUFFIX,
+            _("Skiff") + Config.NAME_SUFFIX,
             Config.APP_ID,
             Config.VERSION,
             Config.APP_ID,

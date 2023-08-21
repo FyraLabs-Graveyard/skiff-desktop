@@ -10,7 +10,7 @@
         },
         {
             "type": "meson",
-            "target": "src/com.fyralabs.ValaTemplate",
+            "target": "src/com.fyralabs.SkiffDesktop",
             "mode": "run",
             "group": "test",
             "problemMatcher": [],

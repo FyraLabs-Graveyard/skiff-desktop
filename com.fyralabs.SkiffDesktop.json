@@ -1,5 +1,5 @@
 {
-    "app-id": "com.fyralabs.ValaTemplate",
+    "app-id": "com.fyralabs.SkiffDesktop",
     "runtime": "com.fyralabs.Platform",
     "runtime-version": "stable",
     "sdk": "com.fyralabs.Sdk",

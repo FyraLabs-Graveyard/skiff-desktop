@@ -1,4 +1,4 @@
-public class ValaTemplate.Application : He.Application {
+public class SkiffDesktop.Application : He.Application {
     private const GLib.ActionEntry APP_ENTRIES[] = {
         { "quit", quit },
     };
@@ -12,7 +12,7 @@ public class ValaTemplate.Application : He.Application {
         Intl.textdomain (Config.GETTEXT_PACKAGE);
         Intl.bind_textdomain_codeset (Config.GETTEXT_PACKAGE, "UTF-8");
 
-        var app = new ValaTemplate.Application ();
+        var app = new SkiffDesktop.Application ();
         return app.run (args);
     }
 

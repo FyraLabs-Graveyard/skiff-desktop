@@ -3,12 +3,12 @@ using He 1;
 
 menu primary-menu {
   item (_("Preferences…"), "win.preferences")
-  item (_("About tauOS Vala Template"), "win.about")
+  item (_("About Skiff"), "win.about")
 }
 
-template ValaTemplateMainWindow : He.ApplicationWindow {
-  default-width: 360;
-  default-height: 360;
+template SkiffDesktopMainWindow : He.ApplicationWindow {
+  default-width: 800;
+  default-height: 600;
 
   Gtk.Box main_box {
     orientation: vertical;

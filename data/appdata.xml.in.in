@@ -3,7 +3,7 @@
   <id>@APP_ID@</id>
   <metadata_license>CC0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <name>tauOS Vala Template</name>
+  <name>Skiff</name>
   <summary>A template for tauOS apps written in Vala</summary>
   <url type="homepage">https://github.com/tau-os/vala-template</url>
   <url type="bugtracker">https://github.com/tau-os/vala-template</url>
