@@ -22,7 +22,7 @@ public class ValaTemplate.Application : He.Application {
 
     public override void startup () {
         Gdk.RGBA accent_color = { 0 };
-        accent_color.parse ("#8C56BF");
+        accent_color.parse ("EF5A3C");
         default_accent_color = He.Color.from_gdk_rgba (accent_color);
 
         resource_base_path = Config.APP_PATH;

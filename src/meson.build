@@ -46,6 +46,7 @@ dependencies = [
     dependency('gee-0.8'),
     dependency('libhelium-1'),
     dependency('gmodule-2.0'),
+    dependency('webkitgtk-6.0'),
 ]
 
 executable(

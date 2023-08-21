@@ -10,7 +10,7 @@ template ValaTemplateMainWindow : He.ApplicationWindow {
   default-width: 360;
   default-height: 360;
 
-  Gtk.Box {
+  Gtk.Box main_box {
     orientation: vertical;
 
     He.AppBar {
@@ -19,14 +19,6 @@ template ValaTemplateMainWindow : He.ApplicationWindow {
       Gtk.MenuButton {
         icon-name: "open-menu-symbolic";
         menu-model: primary-menu;
-      }
-    }
-
-    He.ViewMono {
-      title: _("Hello, World!");
-
-      Gtk.Label {
-        label: _("This is a sample app using Helium technologies.");
       }
     }
   }
