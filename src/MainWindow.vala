@@ -3,7 +3,7 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
     private const GLib.ActionEntry APP_ENTRIES[] = {
         { "about", action_about },
     };
-    private const string baseURL = "https://app.skiff.com/";
+    private const string BASE_URL = "https://app.skiff.com/";
 
     [GtkChild]
     private unowned Gtk.Box main_box;
@@ -31,15 +31,21 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
     ) {
         switch (decision_type) {
             case NAVIGATION_ACTION: {
-                var uri = ((WebKit.NavigationPolicyDecision)policy_decision).get_navigation_action ().get_request ().get_uri ();
-                if (!uri.has_prefix (baseURL)) {
+                var uri = ((WebKit.NavigationPolicyDecision)policy_decision)
+                    .get_navigation_action ()
+                    .get_request ()
+                    .get_uri ();
+                if (!uri.has_prefix (BASE_URL)) {
                     policy_decision.ignore ();
                 }
                 break;
             }
             case NEW_WINDOW_ACTION: {
-                var uri = ((WebKit.NavigationPolicyDecision)policy_decision).get_navigation_action ().get_request ().get_uri ();
-                if (uri.has_prefix (baseURL)) {
+                var uri = ((WebKit.NavigationPolicyDecision)policy_decision)
+                    .get_navigation_action ()
+                    .get_request ()
+                    .get_uri ();
+                if (uri.has_prefix (BASE_URL)) {
                     webview.load_uri (uri);
                 } else {
                     new Gtk.UriLauncher (uri).launch (this, null, null);
@@ -78,7 +84,7 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
         content_manager.add_script (script);
 
         webview.vexpand = true;
-        webview.load_uri (baseURL);
+        webview.load_uri (BASE_URL);
         webview.decide_policy.connect (on_decide_policy);
 
         main_box.append (webview);
