@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="@APP_PATH@">
+    <file compressed="true" preprocess="xml-stripblanks" alias="mainwindow.ui">ui/mainwindow.ui</file>
+  </gresource>
+  <gresource prefix="@APP_PATH@/icons">
+    <file compressed="true" preprocess="xml-stripblanks" alias="@APP_ID@.svg">icons/app.svg</file>
+    <file compressed="true" preprocess="xml-stripblanks" alias="@APP_ID@-symbolic.svg">icons/symbolic.svg</file>
+  </gresource>
+</gresources>

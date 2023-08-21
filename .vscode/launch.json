@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "type": "cppdbg",
+            "name": "Launch Application",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/builddir/src/com.fyralabs.ValaTemplate",
+            "preLaunchTask": "Meson: Build all targets"
+        }
+    ]
+}

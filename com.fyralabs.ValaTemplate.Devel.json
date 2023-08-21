@@ -1,0 +1,54 @@
+{
+    "app-id": "com.fyralabs.ValaTemplate",
+    "runtime": "com.fyralabs.Platform",
+    "runtime-version": "stable",
+    "sdk": "com.fyralabs.Sdk",
+    "sdk-extensions": ["org.freedesktop.Sdk.Extension.vala"],
+    "desktop-file-name-suffix": " (Development)",
+    "command": "com.fyralabs.ValaTemplate",
+    "finish-args": ["--socket=wayland", "--socket=fallback-x11", "--share=ipc", "--device=dri"],
+    "build-options": {
+        "append-path": "/usr/lib/sdk/vala/bin",
+        "prepend-ld-library-path": "/usr/lib/sdk/vala/lib"
+    },
+    "cleanup": [
+        "/cache",
+        "/man",
+        "/share/aclocal",
+        "/share/devhelp",
+        "/lib/systemd",
+        "/include",
+        "/lib/pkgconfig",
+        "/lib/libvala*",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/vala",
+        "*.a",
+        "*.la"
+    ],
+    "modules": [
+        {
+            "name": "vala-template",
+            "builddir": true,
+            "buildsystem": "meson",
+            "config-opts": ["-Ddevelopment=true"],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                },
+                {
+                    "name": "blueprint-compiler",
+                    "buildsystem": "meson",
+                    "sources": [
+                        {
+                            "type": "git",
+                            "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
+                            "tag": "v0.6.0"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "meson",
+            "mode": "build",
+            "problemMatcher": ["$meson-gcc"],
+            "group": "build",
+            "label": "Meson: Build all targets"
+        },
+        {
+            "type": "meson",
+            "target": "src/com.fyralabs.ValaTemplate",
+            "mode": "run",
+            "group": "test",
+            "problemMatcher": [],
+            "label": "Run Application"
+        },
+        {
+            "label": "vala-lint: Lint all",
+            "type": "shell",
+            "command": "vala-lint -c vala-lint.conf ."
+        },
+        {
+            "label": "vala-lint: Fix all",
+            "type": "shell",
+            "command": "vala-lint -c vala-lint.conf --fix ."
+        }
+    ]
+}

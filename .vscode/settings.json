@@ -1,0 +1,10 @@
+{
+    "mesonbuild.configureOnOpen": true,
+    "[meson]": {
+        "editor.defaultFormatter": "mesonbuild.mesonbuild"
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "mesonbuild.linter.muon.enabled": true,
+    "mesonbuild.formatting.enabled": true
+}

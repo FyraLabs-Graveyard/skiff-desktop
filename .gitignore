@@ -1,0 +1,12 @@
+# Misc
+*.ui.in~
+*.ui~
+
+# Meson related
+/_build
+/build
+/builddir
+subprojects/blueprint-compiler
+
+# Flatpak related
+/.flatpak

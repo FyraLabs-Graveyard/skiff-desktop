@@ -1,0 +1,33 @@
+using Gtk 4.0;
+using He 1;
+
+menu primary-menu {
+  item (_("Preferences…"), "win.preferences")
+  item (_("About tauOS Vala Template"), "win.about")
+}
+
+template ValaTemplateMainWindow : He.ApplicationWindow {
+  default-width: 360;
+  default-height: 360;
+
+  Gtk.Box {
+    orientation: vertical;
+
+    He.AppBar {
+      show-back: false;
+
+      Gtk.MenuButton {
+        icon-name: "open-menu-symbolic";
+        menu-model: primary-menu;
+      }
+    }
+
+    He.ViewMono {
+      title: _("Hello, World!");
+
+      Gtk.Label {
+        label: _("This is a sample app using Helium technologies.");
+      }
+    }
+  }
+}

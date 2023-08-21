@@ -1,0 +1,5 @@
+data/app.desktop.in.in
+data/appdata.xml.in.in
+data/ui/mainwindow.blp
+src/Application.vala
+src/MainWindow.vala

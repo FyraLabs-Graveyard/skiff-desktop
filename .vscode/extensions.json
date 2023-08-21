@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "mesonbuild.mesonbuild",
+        "prince781.vala",
+        "ms-vscode.cpptools",
+        "bodil.blueprint-gtk",
+        "esbenp.prettier-vscode",
+        "colinkiama.linter-vala"
+    ]
+}

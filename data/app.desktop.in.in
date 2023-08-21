@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type = Application
+Name = tauOS Vala Template
+Comment = A template for tauOS apps written in Vala
+Icon = @ICON_NAME@
+Exec = @COMMAND@
+Categories = GTK;GNOME;

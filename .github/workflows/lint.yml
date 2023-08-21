@@ -1,0 +1,15 @@
+name: Lint Vala
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/tau-os/builder:nightly
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run vala-lint on project
+        run: vala-lint -c vala-lint.conf .
