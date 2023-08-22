@@ -83,11 +83,27 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
         var content_manager = webview.get_user_content_manager ();
         content_manager.add_script (script);
 
-        webview.vexpand = true;
-        webview.load_uri (BASE_URL);
+        var network_session = webview.get_network_session ();
+        var website_data_manager = network_session.get_website_data_manager ();
+        var cookie_manager = webview.network_session.get_cookie_manager ();
+        cookie_manager.set_persistent_storage (
+            Path.build_filename (
+                website_data_manager.base_data_directory,
+                "cookies"
+            ),
+            WebKit.CookiePersistentStorage.SQLITE
+        );
+
+        var settings = webview.get_settings ();
+        settings.enable_back_forward_navigation_gestures = true;
+        settings.enable_developer_extras = true;
+
         webview.decide_policy.connect (on_decide_policy);
 
+        webview.vexpand = true;
         main_box.append (webview);
+
+        webview.load_uri (BASE_URL);
 
         add_action_entries (APP_ENTRIES, this);
     }
