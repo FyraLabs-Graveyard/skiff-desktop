@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="svg12" width="16" height="16" version="1.1" viewBox="0 0 16 16"><path style="color:#000;fill:#241f31;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none" id="rect3070" d="M 1.5,1 A 0.50005,0.50005 0 0 0 1,1.5 v 13 A 0.50005,0.50005 0 0 0 1.5,15 h 13 A 0.50005,0.50005 0 0 0 15,14.5 V 1.5 A 0.50005,0.50005 0 0 0 14.5,1 Z M 2,2 H 14 V 14 H 2 Z"/><path style="color:#000;fill:#241f31;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none" id="path3240" d="M 8,3 C 5.2445018,3 3,5.2445014 3,8 c 0,2.755499 2.2445018,5 5,5 2.755498,0 5,-2.244501 5,-5 C 13,5.2445014 10.755498,3 8,3 Z m 0,1 c 2.21506,0 4,1.7849398 4,4 0,2.21506 -1.78494,4 -4,4 C 5.7849404,12 4,10.21506 4,8 4,5.7849398 5.7849404,4 8,4 Z"/></svg>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="16.000000pt" height="16.000000pt" viewBox="0 0 16.000000 16.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+</metadata>
+<g transform="translate(0.000000,16.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M46 117 c-22 -16 -18 -65 6 -81 28 -17 72 4 76 37 6 50 -40 75 -82
+44z m44 -37 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4
+10 -10z"/>
+</g>
+</svg>
