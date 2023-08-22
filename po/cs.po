@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.fyralabs.ValaTemplate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-02 00:00+0000\n"
+"POT-Creation-Date: 2023-08-22 16:33-0700\n"
 "PO-Revision-Date: 2023-05-27 07:12+0000\n"
 "Last-Translator: Písek Pískovec <pisekpiskovec@gmail.com>\n"
 "Language-Team: Czech <https://weblate.fyralabs.com/projects/tauOS/vala-"
@@ -19,9 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 4.16.4\n"
 
-#: data/app.desktop.in.in:4
-msgid "tauOS Vala Template"
-msgstr "tauOS Vala Šablona"
+#: data/app.desktop.in.in:4 src/MainWindow.vala:23 src/MainWindow.vala:67
+msgid "Skiff"
+msgstr ""
 
 #: data/app.desktop.in.in:5
 msgid "A template for tauOS apps written in Vala"
@@ -32,17 +32,20 @@ msgid "Preferences…"
 msgstr "Nastavení…"
 
 #: data/ui/mainwindow.blp:6
-msgid "About tauOS Vala Template"
-msgstr "O tauOS Vala šabloně"
+msgid "About Skiff"
+msgstr ""
 
-#: data/ui/mainwindow.blp:26
-msgid "Hello, World!"
-msgstr "Ahoj, Světe!"
+#~ msgid "tauOS Vala Template"
+#~ msgstr "tauOS Vala Šablona"
 
-#: data/ui/mainwindow.blp:29
-msgid "This is a sample app using Helium technologies."
-msgstr "Toto je názorná aplikace využívající technologie Helium."
+#~ msgid "About tauOS Vala Template"
+#~ msgstr "O tauOS Vala šabloně"
 
-#: src/MainWindow.vala:7
-msgid "Vala Template"
-msgstr "Vala Šablona"
+#~ msgid "Hello, World!"
+#~ msgstr "Ahoj, Světe!"
+
+#~ msgid "This is a sample app using Helium technologies."
+#~ msgstr "Toto je názorná aplikace využívající technologie Helium."
+
+#~ msgid "Vala Template"
+#~ msgstr "Vala Šablona"

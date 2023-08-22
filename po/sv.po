@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.fyralabs.ValaTemplate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-02 00:00+0000\n"
+"POT-Creation-Date: 2023-08-22 16:33-0700\n"
 "PO-Revision-Date: 2023-05-27 07:12+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Swedish <https://weblate.fyralabs.com/projects/tauOS/vala-"
@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.16.4\n"
 
-#: data/app.desktop.in.in:4
-msgid "tauOS Vala Template"
+#: data/app.desktop.in.in:4 src/MainWindow.vala:23 src/MainWindow.vala:67
+msgid "Skiff"
 msgstr ""
 
 #: data/app.desktop.in.in:5
@@ -32,17 +32,5 @@ msgid "Preferences…"
 msgstr ""
 
 #: data/ui/mainwindow.blp:6
-msgid "About tauOS Vala Template"
-msgstr ""
-
-#: data/ui/mainwindow.blp:26
-msgid "Hello, World!"
-msgstr ""
-
-#: data/ui/mainwindow.blp:29
-msgid "This is a sample app using Helium technologies."
-msgstr ""
-
-#: src/MainWindow.vala:7
-msgid "Vala Template"
+msgid "About Skiff"
 msgstr ""
