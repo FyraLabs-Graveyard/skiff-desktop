@@ -24,6 +24,19 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
         );
     }
 
+    private Gtk.Widget on_create (WebKit.NavigationAction navigation_action) {
+        var requst = navigation_action.get_request ();
+        var uri = requst.get_uri ();
+
+        if (uri.has_prefix (BASE_URL)) {
+            webview.load_uri (uri);
+        } else {
+            new Gtk.UriLauncher (uri).launch (this, null, null);
+        }
+
+        return null;
+    }
+
     private bool on_decide_policy (
         WebKit.WebView web_view,
         WebKit.PolicyDecision policy_decision,
@@ -99,6 +112,7 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
         settings.enable_developer_extras = true;
 
         webview.decide_policy.connect (on_decide_policy);
+        webview.create.connect (on_create);
 
         webview.vexpand = true;
         main_box.append (webview);
