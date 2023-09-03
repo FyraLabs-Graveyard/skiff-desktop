@@ -3,7 +3,9 @@
     "runtime": "com.fyralabs.Platform",
     "runtime-version": "stable",
     "sdk": "com.fyralabs.Sdk",
-    "finish-args": ["--socket=wayland", "--socket=fallback-x11", "--share=ipc", "--device=dri"],
+    "sdk-extensions": ["org.freedesktop.Sdk.Extension.vala"],
+    "command": "com.fyralabs.SkiffDesktop",
+    "finish-args": ["--socket=wayland", "--socket=fallback-x11", "--share=ipc", "--device=dri", "--share=network"],
     "cleanup": [
         "/cache",
         "/man",
@@ -21,7 +23,7 @@
     ],
     "modules": [
         {
-            "name": "vala-template",
+            "name": "com.fyralabs.SkiffDesktop",
             "builddir": true,
             "buildsystem": "meson",
             "config-opts": ["-Ddevelopment=false"],
@@ -29,7 +31,9 @@
                 {
                     "type": "dir",
                     "path": "."
-                },
+                }
+            ],
+            "modules": [
                 {
                     "name": "blueprint-compiler",
                     "buildsystem": "meson",

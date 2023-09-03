@@ -10,3 +10,4 @@ subprojects/blueprint-compiler
 
 # Flatpak related
 /.flatpak
+/.flatpak-builder

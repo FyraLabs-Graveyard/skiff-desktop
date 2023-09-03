@@ -6,7 +6,7 @@
     "sdk-extensions": ["org.freedesktop.Sdk.Extension.vala"],
     "desktop-file-name-suffix": " (Development)",
     "command": "com.fyralabs.SkiffDesktop",
-    "finish-args": ["--socket=wayland", "--socket=fallback-x11", "--share=ipc", "--device=dri"],
+    "finish-args": ["--socket=wayland", "--socket=fallback-x11", "--share=ipc", "--device=dri", "--share=network"],
     "build-options": {
         "append-path": "/usr/lib/sdk/vala/bin",
         "prepend-ld-library-path": "/usr/lib/sdk/vala/lib"
@@ -28,7 +28,7 @@
     ],
     "modules": [
         {
-            "name": "vala-template",
+            "name": "com.fyralabs.SkiffDesktop",
             "builddir": true,
             "buildsystem": "meson",
             "config-opts": ["-Ddevelopment=true"],
@@ -36,7 +36,9 @@
                 {
                     "type": "dir",
                     "path": "."
-                },
+                }
+            ],
+            "modules": [
                 {
                     "name": "blueprint-compiler",
                     "buildsystem": "meson",
