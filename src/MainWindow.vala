@@ -93,8 +93,8 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
     }
 
     construct {
-        var content_manager = webview.get_user_content_manager ();
-        content_manager.add_script (script);
+        //  var content_manager = webview.get_user_content_manager ();
+        //  content_manager.add_script (script);
 
         var network_session = webview.get_network_session ();
         var website_data_manager = network_session.get_website_data_manager ();
@@ -110,6 +110,10 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
         var settings = webview.get_settings ();
         settings.enable_back_forward_navigation_gestures = true;
         settings.enable_developer_extras = true;
+
+        var context = webview.get_context ();
+        var security_manager = context.get_security_manager ();
+        security_manager.register_uri_scheme_as_secure ("blob");
 
         webview.decide_policy.connect (on_decide_policy);
         webview.create.connect (on_create);
