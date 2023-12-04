@@ -25,7 +25,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="0.1.4" date="2023-12-03">
+    <release version="0.1.5" date="2023-12-03">
       <description translatable="no">
         <ul>
           <li>First release</li>
