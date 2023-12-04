@@ -17,11 +17,11 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/FyraLabs/skiff-desktop/main/screenshots/mail.png</image>
-      <caption>Mail</caption>
+      <caption>The mail view</caption>
     </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/FyraLabs/skiff-desktop/main/screenshots/login.png</image>
-      <caption>Login</caption>
+      <caption>The login view</caption>
     </screenshot>
   </screenshots>
   <releases>
