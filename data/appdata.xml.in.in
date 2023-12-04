@@ -15,12 +15,22 @@
     <p>End-to-end encrypted email, calendar, documents, and files that give you the power to communicate freely.</p>
   </description>
   <screenshots>
-    <screenshot type="default">
-      <image>https://github.com/FyraLabs/skiff-desktop/raw/main/data/shot.png</image>
-      <caption>Main Window</caption>
+    <screenshot xml:lang="en" type="default">
+      <image>https://raw.githubusercontent.com/FyraLabs/skiff-desktop/main/screenshots/mail.png</image>
+      <caption>Mail</caption>
+    </screenshot>
+    <screenshot xml:lang="en" type="default">
+      <image>https://raw.githubusercontent.com/FyraLabs/skiff-desktop/main/screenshots/login.png</image>
+      <caption>Login</caption>
     </screenshot>
   </screenshots>
   <releases>
-    <release version="0.1.0" date="2023-01-01" />
+    <release version="0.1.2" date="2023-12-03">
+      <description translatable="no">
+        <ul>
+          <li>First release</li>
+        </ul>
+      </description>
+    </release>
   </releases>
 </component>
