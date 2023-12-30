@@ -25,6 +25,13 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1.6" date="2023-12-29">
+      <description translatable="no">
+        <ul>
+          <li>Fix a bug where external links would open two times in the browser</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.5" date="2023-12-03">
       <description translatable="no">
         <ul>
