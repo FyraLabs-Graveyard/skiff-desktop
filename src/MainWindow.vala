@@ -48,8 +48,10 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
                     .get_navigation_action ()
                     .get_request ()
                     .get_uri ();
-                if (!uri.has_prefix (BASE_URL)) {
-                    policy_decision.ignore ();
+                if (uri.has_prefix (BASE_URL)) {
+                    policy_decision.use ();
+                } else {
+                    policy_decision.ignore (); // We shouldn't navigate away from the app.
                 }
                 break;
             }
@@ -63,15 +65,17 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
                 } else {
                     new Gtk.UriLauncher (uri).launch (this, null, null);
                 }
+                policy_decision.ignore (); // Regardless of what happens, we want to handle it, not WebKit.
                 break;
             }
             case RESPONSE:
+                policy_decision.use ();
                 break;
             default:
-                return false;
+                return false; // If WebKit adds a new type that we don't know about, just let them handle it.
         }
 
-        return true;
+        return true; // Should block the default signal handler... I hope.
     }
 
     private void action_about () {
