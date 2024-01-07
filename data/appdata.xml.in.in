@@ -25,6 +25,13 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1.7" date="2024-1-6">
+      <description translatable="no">
+        <ul>
+          <li>Fix a bug where in-app file downloads wouldn't work</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.6" date="2023-12-29">
       <description translatable="no">
         <ul>
