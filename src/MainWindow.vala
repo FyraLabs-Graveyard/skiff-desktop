@@ -48,7 +48,8 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
                     .get_navigation_action ()
                     .get_request ()
                     .get_uri ();
-                if (uri.has_prefix (BASE_URL)) {
+                // blob:BASE_URL is for in-app downloads
+                if (uri.has_prefix (BASE_URL) || uri.has_prefix ("blob:" + BASE_URL)) {
                     policy_decision.use ();
                 } else {
                     policy_decision.ignore (); // We shouldn't navigate away from the app.
