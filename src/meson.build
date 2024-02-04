@@ -36,6 +36,7 @@ sources = [
     'Config.vapi',
     'Application.vala',
     'MainWindow.vala',
+    'MessageHandler.vala',
 ]
 
 dependencies = [
@@ -47,6 +48,7 @@ dependencies = [
     dependency('libhelium-1'),
     dependency('gmodule-2.0'),
     dependency('webkitgtk-6.0'),
+    dependency('json-glib-1.0'),
 ]
 
 executable(

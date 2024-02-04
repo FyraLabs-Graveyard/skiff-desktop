@@ -19,6 +19,7 @@ meson
 vala
 blueprint-compiler
 webkitgtk-6.0
+json-glib-1.0
 ```
 
 ## 🏗️ Building
