@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: com.fyralabs.ValaTemplate\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-03 16:57-0800\n"
+"POT-Creation-Date: 2024-02-04 17:58-0800\n"
 "PO-Revision-Date: 2024-01-09 15:15+0000\n"
 "Last-Translator: Cédric Skwar <cdrc@skwar.me>\n"
-"Language-Team: German <https://weblate.fyralabs.com/projects/fyralabs/"
-"skiff-desktop/de/>\n"
+"Language-Team: German <https://weblate.fyralabs.com/projects/fyralabs/skiff-"
+"desktop/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,9 +19,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.0\n"
 
-#: data/app.desktop.in.in:4 src/MainWindow.vala:23 src/MainWindow.vala:80
+#: data/app.desktop.in.in:4 src/MainWindow.vala:18 src/MainWindow.vala:80
 msgid "Skiff"
 msgstr "Skiff"
+
+#: data/app.desktop.in.in:5
+msgid "Privacy-first end-to-end encrypted email"
+msgstr ""
 
 #: data/ui/mainwindow.blp:5
 msgid "Preferences…"
