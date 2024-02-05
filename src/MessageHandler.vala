@@ -56,10 +56,10 @@ public class SkiffDesktop.MessageHandler {
         notification.set_body (notification_item.body);
 
         notification.set_default_action_and_target ("app.open-thread", "s", notification_item.thread_id);
-        notification.add_button_with_target(_("Mark As Read"), "app.mark-as-read", "s", notification_item.thread_id);
+        notification.add_button_with_target (_("Mark As Read"), "app.mark-as-read", "s", notification_item.thread_id);
         // notification.add_button_with_target(_("Mark As Spam"), "app.mark-as-spam", "s", notification_item.thread_id); kinda useless IMO (plus, goes over GNOME's limit :/)
-        notification.add_button_with_target(_("Trash"), "app.trash-thread", "s", notification_item.thread_id);
-        notification.add_button_with_target(_("Archive"), "app.archive-thread", "s", notification_item.thread_id);
+        notification.add_button_with_target( _("Trash"), "app.trash-thread", "s", notification_item.thread_id);
+        notification.add_button_with_target (_("Archive"), "app.archive-thread", "s", notification_item.thread_id);
 
         GLib.Application.get_default ().send_notification ("meowy", notification);
     }
