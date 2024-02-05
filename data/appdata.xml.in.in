@@ -25,6 +25,13 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.2.0" date="2024-2-4">
+      <description translatable="no">
+        <ul>
+          <li>Add support for desktop notifications</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.7" date="2024-1-6">
       <description translatable="no">
         <ul>

@@ -1,4 +1,4 @@
-project('com.fyralabs.SkiffDesktop', ['c', 'vala'], version: '0.1.7')
+project('com.fyralabs.SkiffDesktop', ['c', 'vala'], version: '0.2.0')
 
 # Convert the app id to a GNOME style path identifier
 path_identifier = '/' + meson.project_name().replace('.', '/')
