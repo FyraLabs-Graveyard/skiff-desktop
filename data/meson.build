@@ -85,6 +85,17 @@ if compile_schemas.found()
     )
 endif
 
+dbus_service = configure_file(
+    input: 'app.service.in',
+    output: meson.project_name() + '.service',
+    configuration: {
+        'APP_ID': meson.project_name(),
+        'BINDIR': join_paths(get_option('prefix'), get_option('bindir')),
+    },
+    install: true,
+    install_dir: join_paths(get_option('datadir'), 'dbus-1', 'services'),
+)
+
 # GResources allow you to bundle and reference assets within your application.
 # Resources are specified using a gresource file.
 # For more information about GResources, see: https://docs.gtk.org/gio/struct.Resource.html
