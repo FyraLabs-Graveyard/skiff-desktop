@@ -1,6 +1,6 @@
 [GtkTemplate (ui = "/com/fyralabs/SkiffDesktop/mainwindow.ui")]
 public class SkiffDesktop.MainWindow : He.ApplicationWindow {
-    private const GLib.ActionEntry APP_ENTRIES[] = {
+    private const GLib.ActionEntry WINDOW_ENTRIES[] = {
         { "about", action_about },
     };
     private const string BASE_URL = "https://app.skiff.com/";
@@ -8,13 +8,8 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
     [GtkChild]
     private unowned Gtk.Box main_box;
     private WebKit.WebView webview = new WebKit.WebView ();
-    private WebKit.UserScript script = new WebKit.UserScript (
-        "window.IsSkiffWindowsDesktop = true;",
-        WebKit.UserContentInjectedFrames.TOP_FRAME,
-        WebKit.UserScriptInjectionTime.START,
-        null,
-        null
-    );
+
+    public MessageHandler message_handler;
 
     public MainWindow (He.Application application) {
         Object (
@@ -98,8 +93,7 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
     }
 
     construct {
-        //  var content_manager = webview.get_user_content_manager ();
-        //  content_manager.add_script (script);
+        this.message_handler = new MessageHandler (webview);
 
         var network_session = webview.get_network_session ();
         var website_data_manager = network_session.get_website_data_manager ();
@@ -128,6 +122,6 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
 
         webview.load_uri (BASE_URL);
 
-        add_action_entries (APP_ENTRIES, this);
+        add_action_entries (WINDOW_ENTRIES, this);
     }
 }

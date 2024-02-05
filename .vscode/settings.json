@@ -1,5 +1,4 @@
 {
-    "mesonbuild.configureOnOpen": true,
     "[meson]": {
         "editor.defaultFormatter": "mesonbuild.mesonbuild"
     },
