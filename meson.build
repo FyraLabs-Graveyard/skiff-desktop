@@ -1,7 +1,7 @@
 project('com.fyralabs.SkiffDesktop', ['c', 'vala'], version: '0.2.0')
 
 # Convert the app id to a GNOME style path identifier
-path_identifier = '/' + meson.project_name().replace('.', '/')
+path_identifier = '/' + meson.project_name().replace('.', '/') + '/'
 
 subproject('blueprint-compiler', required: false)
 
