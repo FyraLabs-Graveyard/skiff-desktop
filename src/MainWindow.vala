@@ -118,6 +118,7 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
         webview.create.connect (on_create);
 
         webview.vexpand = true;
+        webview.add_css_class ("framed");
         main_box.append (webview);
 
         webview.load_uri (BASE_URL);

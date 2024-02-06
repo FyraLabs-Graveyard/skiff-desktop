@@ -2,6 +2,7 @@
 <gresources>
   <gresource prefix="@APP_PATH@">
     <file compressed="true" preprocess="xml-stripblanks" alias="mainwindow.ui">ui/mainwindow.ui</file>
+    <file compressed="true" alias="style.css">style.css</file>
   </gresource>
   <gresource prefix="@APP_PATH@/icons">
     <file compressed="true" preprocess="xml-stripblanks" alias="@APP_ID@.svg">icons/app.svg</file>

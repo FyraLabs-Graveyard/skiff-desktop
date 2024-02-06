@@ -1,0 +1,4 @@
+.framed {
+    border: 1px solid @borders;
+    border-radius: 2px;
+}
