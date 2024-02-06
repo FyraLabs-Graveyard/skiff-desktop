@@ -118,6 +118,7 @@ public class SkiffDesktop.MainWindow : He.ApplicationWindow {
         webview.create.connect (on_create);
 
         webview.vexpand = true;
+        webview.margin_start = webview.margin_end = webview.margin_bottom = 4;
         webview.add_css_class ("framed");
         main_box.append (webview);
 
