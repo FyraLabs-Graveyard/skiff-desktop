@@ -1,3 +1,6 @@
+# This project is dead.
+See https://blog.fyralabs.com/goodbye-skiff-desktop/ for an informal retrospective.
+
 <img align="left" style="vertical-align: middle" width="120" height="120" alt="Skiff Icon" src="data/icons/app.svg">
 
 # Skiff Desktop
